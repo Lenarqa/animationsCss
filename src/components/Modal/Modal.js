@@ -11,15 +11,13 @@ const modal = (props) => {
       mountOnEnter
       unmountOnExit
       in={props.show}
-    //   classNames="fade-slide" // or
-      classNames={
-         {
-            enter: "",
-            enterActive: "ModalOpen",
-            exit: '',
-            exitActive: "ModalClosed"
-         }
-      }
+      //   classNames="fade-slide" // or
+      classNames={{
+        enter: "",
+        enterActive: "ModalOpen",
+        exit: "",
+        exitActive: "ModalClosed",
+      }}
       timeout={animationTiming}
     >
       <div className="Modal">
